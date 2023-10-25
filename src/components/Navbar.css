@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    width: 100vw;
+    position: fixed;
+}
+.links{
+    display: flex;
+    align-items: center;
+}
+.link{
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:400;
+    color: white;
+    font-size: 15px;
+}
+.botonNav{
+    background-color: black;
+    height: 40px;
+    width: 150px;
+    font-weight: 400;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 60px;
+    color: white;
+    font-size: 19px;
+}

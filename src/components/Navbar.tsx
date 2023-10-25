@@ -2,37 +2,37 @@
 
 import React from 'react'
 import Link from 'next/link'
+import "./Navbar.css"
+import img from "@/components/img/JR-removebg-preview 1.png"
 import { signIn , useSession, signOut} from 'next-auth/react'
+import Image from "next/image"
+
 function Navbar() {
   const {data:session}= useSession();
-  console.log(session?.user?.image);
+
   
   return (
-    <nav className='flex justify-between'>
-        <h1>JR Login</h1>
+    <nav className='nav'>
+        <Image src={img} alt='logo' width={132} height={141} className='Logo'/>
         <div>
           {
             session?.user ? 
             
             <div>
-              <h2>{session?.user?.name}</h2>
-              <img src={`${session?.user?.image}`} alt="" />
-              <button onClick={()=> signOut()}>
-                  logOut
-              </button>
+             
             </div>
            
             
             :
-            <>
-            <Link href="/dashboard">
+            <div className='links'>
+            <Link href="/dashboard" className='link'>
             Dashboard
             </Link>
             
-            <button onClick={()=> signIn()} className='bg-sky-400 px-3 py-200 rounded'>
+            <button onClick={()=> signIn()} className='botonNav'>
               Sign In
             </button>
-            </>
+            </div>
           }
            
         </div>

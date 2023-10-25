@@ -17,6 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <header>
+        <title>Landing Page</title>
+      </header>
       <body className={inter.className}>
         <Providers>
         <Navbar/>

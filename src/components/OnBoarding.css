@@ -1,0 +1,67 @@
+.intro{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    background-image:url("../components/img/new.png");
+}
+.antonio{
+    font-size: 200px;
+}
+.cuadroTexto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+}
+
+
+.texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+
+}
+.parrafo{
+    font-weight: 300;
+    font-size: 30px;
+}
+.botonIntro{
+    background-color: #6F7DF9;
+    width: 227px;
+    height: 62px;
+    color: rgb(255, 255, 255);
+    border-radius: 33px;
+    font-weight: 600;
+    font-size: 19px;
+    margin-top: 10px;
+}
+h2{
+    font-weight: 700;
+    font-size: 30px;    
+}
+.uno{
+    background-image: url("../components/img/Group\ 3.png");
+    margin-bottom: 20px;
+    height: 400px;
+    width: 420px;
+}
+.dos{
+    background-image: url("../components/img/Group\ 4.png");
+    margin-bottom: 20px;
+    height: 400px;
+    width: 420px;
+}
+.tres{
+    background-image: url("../components/img/Group\ 5.png");
+    margin-bottom: 20px;
+    height: 400px;
+    width: 420px;
+}
+.serviceContainer{
+    display: flex;
+}
